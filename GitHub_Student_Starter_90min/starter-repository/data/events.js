@@ -49,6 +49,15 @@ window.EVENTS = [
     date: "28 Nov 2026",
     location: "Sports square",
     description: "Join us for the annual Gym!"
-  }
+  },
+  {
+    id: 7,
+    title: "Sauna",
+    category: "Community",
+    date: "28 Nov 2026",
+    location: "Sports square",
+    description: "Join us for the annual Sauna!"
+  },
+
 
 ];
