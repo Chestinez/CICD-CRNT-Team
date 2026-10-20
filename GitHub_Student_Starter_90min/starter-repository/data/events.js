@@ -33,8 +33,22 @@ window.EVENTS = [
     date: "25 Nov 2026",
     location: "Computer Science Building",
     description: "Join us for the annual hackathon kickoff event!"
+  },
+  {
+    id: 5,
+    title: "CCA Carnival",
+    category: "Community",
+    date: "25 Nov 2026",
+    location: "T11 square",
+    description: "Join us for the annual CCA carnival!"
+  },
+  {
+    id: 6,
+    title: "Gym",
+    category: "Community",
+    date: "28 Nov 2026",
+    location: "Sports square",
+    description: "Join us for the annual Gym!"
   }
-
-
 
 ];
