@@ -25,5 +25,16 @@ window.EVENTS = [
     date: "20 Nov 2026",
     location: "Campus Plaza",
     description: "Explore student interest groups and sign up to get involved."
+  },
+  {
+    id: 4,
+    title: "Hackathon Kickoff",
+    category: "Community",
+    date: "25 Nov 2026",
+    location: "Computer Science Building",
+    description: "Join us for the annual hackathon kickoff event!"
   }
+
+
+
 ];
