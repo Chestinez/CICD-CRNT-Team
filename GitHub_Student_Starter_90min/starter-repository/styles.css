@@ -1,191 +1,57 @@
-
-* {
-  box-sizing: border-box;
-}
-
+* { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  color: #29213f;
-  background: #f8f7ff;
+  color: #172334;
+  background: #f5f7fb;
 }
-
-.container {
-  max-width: 1040px;
-  margin: auto;
-  padding: 32px 20px 24px;
-}
-
+.container { max-width: 1040px; margin: auto; padding: 32px 20px 24px; }
 .hero {
-  background: linear-gradient(135deg, #6d4cba, #a78bfa);
+  background: #202f57;
   color: white;
   padding: 38px 32px;
   border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(109, 76, 186, 0.18);
 }
-
-.hero h1 {
-  margin: 8px 0;
-  font-size: clamp(2rem, 5vw, 3rem);
-}
-
-.hero p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.eyebrow {
-  letter-spacing: 0.16em;
-  font-size: .72rem;
-  font-weight: 800;
-  opacity: .85;
-}
-
-.tools {
-  display: flex;
-  gap: 16px;
-  margin: 24px 0;
-}
-
-.field {
-  flex: 1;
-}
-
-.field label {
-  display: block;
-  font-weight: 650;
-  margin-bottom: 8px;
-  color: #49367a;
-}
-
-.field input,
-.field select {
+.hero h1 { margin: 8px 0; font-size: clamp(2rem, 5vw, 3rem); }
+.hero p { margin: 0; line-height: 1.5; }
+.eyebrow { letter-spacing: 0.16em; font-size: .72rem; font-weight: 800; opacity: .85; }
+.tools { display: flex; gap: 16px; margin: 24px 0; }
+.field { flex: 1; }
+.field label { display: block; font-weight: 650; margin-bottom: 8px; }
+.field input, .field select {
   width: 100%;
-  border: 1px solid #d8cff1;
+  border: 1px solid #c4cada;
   padding: 13px;
   border-radius: 10px;
   background: white;
-  color: #29213f;
   font: inherit;
-  transition: border-color 0.2s, box-shadow 0.2s;
 }
-
-.field input:focus,
-.field select:focus {
-  outline: none;
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
-}
-
-.section-heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.section-heading h2 {
-  font-size: 1.3rem;
-  color: #49367a;
-}
-
-#event-count {
-  color: #786a96;
-}
-
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.section-heading h2 { font-size: 1.3rem; }
+#event-count { color: #53617a; }
+.event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .event-card {
   background: white;
-  border: 1px solid #e5def5;
+  border: 1px solid #e2e7f0;
   padding: 22px;
   border-radius: 14px;
   min-height: 220px;
-  box-shadow: 0 3px 10px rgba(70, 45, 120, 0.05);
-  transition: transform 0.25s ease,
-              box-shadow 0.25s ease,
-              border-color 0.25s ease;
 }
-
-.event-card h3 {
-  margin: 14px 0 6px;
-  line-height: 1.3;
-  color: #35245c;
-}
-
-.event-card p {
-  line-height: 1.5;
-}
-
-/* MEMBER D - TODO 1: Event card hover effect */
-.event-card:hover {
-  transform: translateY(-5px);
-  border-color: #a78bfa;
-  box-shadow: 0 10px 24px rgba(109, 76, 186, 0.16);
-}
-
-/* MEMBER D - TODO 2: Improved category badge */
+.event-card h3 { margin: 14px 0 6px; line-height: 1.3; }
+.event-card p { line-height: 1.5; }
 .category-badge {
   display: inline-block;
   border-radius: 999px;
-  padding: 7px 14px;
+  padding: 5px 10px;
   font-size: .75rem;
   font-weight: 700;
-  color: #5b35a3;
-  background: #ede9fe;
-  border: 1px solid #d8b4fe;
-  letter-spacing: 0.03em;
+  color: #254c86;
+  background: #e7f1ff;
 }
-
-.event-details {
-  font-size: .88rem;
-  color: #786a96;
-}
-
-.empty-state {
-  grid-column: 1 / -1;
-  padding: 30px;
-  background: white;
-  border-radius: 14px;
-  border: 1px solid #e5def5;
-  text-align: center;
-}
-
-footer {
-  margin-top: 26px;
-  color: #786a96;
-  font-size: .8rem;
-}
-
-/* MEMBER D - TODO 3: Mobile responsive layout */
-@media (max-width: 650px) {
-  .container {
-    padding: 20px 16px;
-  }
-
-  .hero {
-    padding: 28px 22px;
-  }
-
-  .tools {
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .event-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .event-card {
-    min-height: auto;
-  }
-
-  .section-heading {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+.event-details { font-size: .88rem; color: #57647a; }
+.empty-state { grid-column: 1 / -1; padding: 30px; background: white; border-radius: 14px; }
+footer { margin-top: 26px; color: #68758a; font-size: .8rem; }
+/* MEMBER D: Improve the interface by changing colours and adding styles. */
+/* TODO 1: Add a :hover style to .event-card (e.g. border, shadow, transform). */
+/* TODO 2: Improve the .category-badge style. */
+/* TODO 3: Add a mobile layout at max-width: 650px (1 column, stacked tools). */
